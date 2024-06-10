@@ -1,6 +1,7 @@
 package programmers.lv1.포켓몬
 
 import com.google.common.truth.Truth.assertThat
+import kotlin.math.min
 
 fun main() {
     with(Solution()) {
@@ -16,8 +17,9 @@ fun main() {
 }
 
 internal class Solution {
-    fun solution(numbers: IntArray?): Int {
-        val answer = 0
-        return answer
+    fun solution(numbers: IntArray): Int {
+        val maxCount = numbers.size / 2
+        val typeCount = numbers.toSet().size
+        return min(maxCount, typeCount)
     }
 }
