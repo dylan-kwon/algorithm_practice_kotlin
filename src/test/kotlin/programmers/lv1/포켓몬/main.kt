@@ -16,7 +16,7 @@ fun main() {
     }
 }
 
-internal class Solution {
+private class Solution {
     fun solution(numbers: IntArray): Int {
         val maxCount = numbers.size / 2
         val typeCount = numbers.toSet().size
